@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,12 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.yellow
     }
 
+    @IBAction func buttonPressed(_ sender: Any) {
+        count = count + 1
+        print("\(count) DO IT!")
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

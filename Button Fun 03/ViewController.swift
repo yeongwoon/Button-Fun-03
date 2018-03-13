@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var doItCounter: UILabel!
     var count = 0
 
     override func viewDidLoad() {
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         count = count + 1
         print("\(count) DO IT!")
+        
+        doItCounter.text = "\(count) DO IT!"
         
         
     }
